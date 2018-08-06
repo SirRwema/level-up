@@ -7,53 +7,54 @@
     <body>
         <div class="wrapper">
                 <div class="logo">
-                        <h4 >UBER</h4>
-                    </div>
-                    <div class="signup-text">
-                        <h1>Sign Up to Ride</h1>
-                        <h6>Safe reliable,rides in minutes</h6>
-                    </div>
+                    <h4 >UBER</h4>
+                </div>
+                <div class="signup-text">
+                    <div class="signup-headline">Sign Up to Ride</div>
+                    <div class="signup-subtext">Safe reliable,rides in minutes</div>
+                </div>
             <div class="form-container">
                 <form action="POST">
-                    <div class="two-col-grid">
+                    <div class="two-col-grid form-field">
                         <div class="grid-item1">
-                            <label class="first-name" data-icon="u">First Name(required)</label>
-                            <input class="firstname"  required="required" type="text" placeholder="mysuperfirstname690" />
+                            <label class="first-name">First Name(required)</label>
+                            <input class="firstname"  required="required" type="text" placeholder="First name" />
                         </div>
                         <div class="grid-item2"> 
-                            <label class="last-name" data-icon="u">Last Name(required)</label>
-                            <input class="lastname"  required="required" type="text" placeholder="mysuperlastname690" />
+                            <label class="last-name">Last Name(required)</label>
+                            <input class="lastname"  required="required" type="text" placeholder="Last name" />
                         </div>
                     </div>
-                    <div class="two-col-grid">
-                        <label class="phone-number">Enter Your Phone Number</label>
+                    <div class="two-col-grid form-field">
+                        <label class="phone-number">Enter your Phone Number(required)</label>
                         <div class="country-code-select">
-                            <select>
-                                <option value="+256">+256</option>
-                                <option value="+254">+254</option>
-                            </select>
+                            <input list="country-code-browser" />
+                            <datalist id="country-code-browser">
+                                <option value="+256">
+                                <option value="+254">
+                            </datalist>
                         </div>
                         <div class="country-code-input">
-                            <input class="phonenumber" required="required" type="text" placeholder="Phone Number" />
+                            <input class="phonenumber" required="required" type="tel" placeholder="Phone number" />
                         </div>
                     </div>
-                    <p>
-                        <label class="email">Enter Your Email (Required)</label>
-                        <input class="email-input" required="required" type="email" placeholder="johndoe@example.com"/>
-                    </p>
-                    <p>
-                        <label class="password">Enter a password (Required)</label>
-                        <input class="password-input" required="required" type="password" placeholder="abc123!@#"/>
-                    </p>
-                    <p>
+                    <div class="form-field">
+                        <label class="email">Enter Your Email (required)</label>
+                        <input class="email-input" required="required" type="email" placeholder="Email"/>
+                    </div>
+                    <div class="form-field">
+                        <label class="password">Enter a password (required)</label>
+                        <input class="password-input" required="required" type="password" placeholder="Password"/>
+                    </div>
+                    <div class="promo-code form-field">
                         <a href="#">Add a promo code</a>
-                    </p>
-                    <p class="signup-button">
+                    </div>
+                    <div class="signup-button form-field">
                         <input type="submit" value="Sign up"/>
-                    </p>
-                    <p class="terms-conditions">
+                    </div>
+                    <div class="terms-conditions form-field">
                         <h5>By clicking "Sign Up", you agree to Uber's <a href="#">Terms of Use</a> and acknowledge you have read the <a href="#">Privacy Policy</a>.</h5>
-                    </p>
+                    </div>
 
                 </form>
 

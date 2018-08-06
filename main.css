@@ -1,13 +1,21 @@
+body{
+    background: #F8F8F9;
+}
 .form-container {
-    margin-left:28px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 50px;
+    box-sizing: border-box;
+    min-width: 450px;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    display: block;
+    user-select: text;
 }
 .wrapper{
-    background-color: azure;
     margin: 0 auto;
     width: 500px;
+    user-select: text;
 }
 .logo{
     background-color: black;
@@ -17,39 +25,80 @@
     padding-bottom: 15px;
     width: 100px;
     height: 80px;
-}
-h4{
-    font-size:25px;
+    font-size: 25px;
+    text-align: center;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.signup-text, 
-h1, 
-h6{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.signup-text{
+    display: block;
+    text-align: center;    
+    font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    user-select: text;
+    line-height: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.signup-headline{   
+    font-weight: 400;
+    font-size: 32px;
+
 
 }
-.signup-text,h6{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+.signup-subtext{
+    font-size: 20px;
+    font-weight: 350;
 
 }
+
 label,
 input{
     display: inline-block;
-    font-size:12px;
-    font-style: italic;
+    font-size:16px;
+    font-style: normal;
+    font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+label{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 15px;
+    visibility: visible 
 }
 input{
-    width: 85%;
-    margin-top: 4px;
-    padding: 10px 5px 10px 32px;
+    width: 100%;
+    height: 52px;
+    background: #ffffff;
+    margin-top: 8px;
+    border-style: solid;
+    padding: 8px 18px;
     border: 1px solid rgb(178, 178, 178);
-    box-sizing: content-box;
-    border-radius: 3px;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    transition: all 0.2s linear;
+    outline: none;
+    border-radius: 0px;
+    border-width:1px; 
+    transition: all 400ms ease;
+    box-sizing: border-box;
+
+}
+input[type="submit"]{
+    background:#11939a;
+    text-transform: uppercase;
+    padding: 15px 26px;
+    text-align: left;
+    vertical-align: middle;
+    overflow:visible;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    line-height: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    text-rendering: auto;
+}
+input[type="list"]{
+    text-align: right;
 
 }
 .two-col-grid{
@@ -72,13 +121,48 @@ input{
 .two-col-grid .country-code-select{
     float: left;
     width: 15%;
-    height: 25px;
-    margin-top: 15px;
+    text-align: left;
 }
 .two-col-grid .country-code-input{
-    float:right;
-    width:85%;
+    float: right;
+    width: 85%;
 }
 .phone-number{
     margin-top: 15px;
+}
+.terms-conditions{
+    font-family: ff-clan-web-pro, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 32px;
+    width: 440px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #11939a;
+    user-select: text;
+}
+.promo-code{
+    display: block;
+    user-select: text;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top:25px;
+    height: 50px;
+    width: 440px;
+    max-height: 50px;
+    margin-bottom: 10px;
+    font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.form-feild{
+    padding-bottom: 3px;
+    padding-top: 15px;
+    width:400px;
+    max-height: 100px;
+}
+.country-code-select{
+    font-size: 1px;
 }
